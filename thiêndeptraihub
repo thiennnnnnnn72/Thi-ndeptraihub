@@ -1,0 +1,99 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "THIEN ĐẸP TRAI BETA",
+         Animation = "THỬ NGHIỆM THIÊN ĐẸP TRAI HUB"
+         },
+        Key = {
+        KeySystem =true,
+        Title = "Key THIÊN ĐẸP TRAI HUB",
+        Description = "",
+        KeyLink = "",
+        Keys = {"HOÀNGLONGTHIÊN"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "OK RỒI KEY ĐÚNG RỒI NHA",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id= 131840579478031",
+       Size = {60, 60},
+       Color = Color3.fromRGB(20, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "MAIN"})
+     local Tab2o = MakeTab({Name = "THIEN TEST 1"})
+     local Tab3o = MakeTab({Name = "THIÊN TEST2"})
+     
+     
+-------TOGGLE 
+
+     Toggle = AddToggle(Tab1o, {
+      Name = "CHƯA CÓ CHỨC NĂNG GÌ ĐÂU",
+      Default = false,
+      Callback = function()
+     end
+    })
+    
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "Thiên FIX LAG",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })
+     AddButton(Tab1o, {
+     Name = "SCRIPT Thiên đẹp traia",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "Aimbot Vip THIÊN ĐẸP TRAI HUB",
+    Callback = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Ace/main/Ace"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "Lương lồn",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "Lợi heo lồn",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "Thiên FIX LAG",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })
+----- Dropdown 
+
+  Dropdown = AddDropdown(Tab1o, {
+     Name = "Thiên test",
+     Options = {"Test 1", "Test 2", "Test 3", "Test 4"},
+     Default = "Melee",
+     Callback = function()
+     end
+   })
+
+----- Section 
+   
+   Section = AddSection(Tab1o, {"THIEN"})          
+
+----- Paragraph 
+                    
+   Paragraph = AddParagraph(Farm, {"THIEN", ""})
+   
+   
